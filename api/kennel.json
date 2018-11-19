@@ -1,0 +1,101 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "name": "Jordan Nelson"
+    },
+    {
+      "id": 3,
+      "name": "Zoe LeBlanc"
+    },
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animals": [
+    {
+      "id": 4,
+      "name": "Zoe"
+    },
+    {
+      "id": 5,
+      "name": "Athena"
+    },
+    {
+      "id": 6,
+      "name": "Lester"
+    }
+  ],
+  "owners": [
+    {
+      "id": 2,
+      "name": "Emma Beaton",
+      "phoneNumber": "344-3445-667"
+    },
+    {
+      "id": 3,
+      "name": "Dani Adkins",
+      "phoneNumber": "32234-55665"
+    },
+    {
+      "id": 4,
+      "name": "Adam Oswalt",
+      "phoneNumber": "23423-2342"
+    },
+    {
+      "id": 5,
+      "name": "Fletcher Bangs",
+      "phoneNumber": " 474-5645"
+    },
+    {
+      "id": 6,
+      "name": "Angela Lee",
+      "phoneNumber": "2343-4565"
+    }
+  ],
+  "petOwners": [
+    {
+      "id": 1,
+      "ownerID": 1,
+      "petID": 1
+    },
+    {
+      "id": 2,
+      "ownerID": 2,
+      "petID": 1
+    },
+    {
+      "id": 3,
+      "ownerID": 3,
+      "petID": 2
+    },
+    {
+      "id": 4,
+      "ownerID": 4,
+      "petID": 3
+    },
+    {
+      "id": 5,
+      "ownerID": 5,
+      "petID": 4
+    },
+    {
+      "id": 6,
+      "ownerID": 6,
+      "petID": 5
+    }
+  ]
+}
