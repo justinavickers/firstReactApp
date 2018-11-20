@@ -3,7 +3,7 @@ import "./owner.css"
 export default class OwnersList  extends Component {
     render() {
         return (
-            <section className="owners">
+            <section className="owners list">
                 {
                     this.props.owners.map(owner =>
                         <div key={owner.id} className="card">

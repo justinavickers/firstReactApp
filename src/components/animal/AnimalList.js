@@ -5,7 +5,7 @@ import "./animal.css"
 export default class AnimalList extends Component {
   render() {
     return (
-      <section className="animals">
+      <section className="animals list">
         {
           this.props.animals.map(animal =>
             <div key={animal.id} className="card">
