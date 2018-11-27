@@ -1,8 +1,18 @@
 import React, { Component } from 'react'
 import "./owner.css"
-export default class OwnersList  extends Component {
+export default class OwnersList extends Component {
     render() {
         return (
+            <React.Fragment>
+            <div className="ownerButton">
+            <button type="button"
+            className="btn btn-success"
+            onClick={() => {
+                this.props.history.push("/owners/new")}
+            }>
+                       Add Owner
+                    </button>
+                    </div>
             <section className="owners list">
                 {
                     this.props.owners.map(owner =>
@@ -19,6 +29,7 @@ export default class OwnersList  extends Component {
                     )
                 }
             </section>
+                </React.Fragment>
         )
     }
 }

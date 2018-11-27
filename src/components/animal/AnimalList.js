@@ -1,10 +1,29 @@
 import React, { Component } from 'react'
 import dog from "./DogIcon.png"
 import "./animal.css"
+import { Link } from "react-router-dom";
 
 export default class AnimalList extends Component {
+  // petOwner(animalID) {
+  //   console.log("owners, animalID")
+  //   let petOwners = this.props.owners_animals
+  //   .filter(join => join.animal_id === animalID)
+  //   .map(join => this.props.owners.find (owner => owner.id === join.owner_id))
+  //   console.log('owners', petOwners)
+  //   return petOwners
+  // }
   render() {
     return (
+      <React.Fragment>
+ <div className="animalButton">
+                    <button type="button"
+                            className="btn btn-success"
+                            onClick={() => {
+                                this.props.history.push("/animals/new")}
+                            }>
+                        Admit Animal
+                    </button>
+                </div>
       <section className="animals list">
         {
           this.props.animals.map(animal =>
@@ -13,15 +32,18 @@ export default class AnimalList extends Component {
                 <h5 className="card-title">
                   <img src={dog} alt="dog" className="icon--dog" />
                   {animal.name}
+                  <Link className="nav-link" to={`/animals/${animal.id}`}>Details</Link>
                   <a href="#"
                     onClick={() => this.props.deleteAnimal(animal.id)}
-                    className="card-link">Delete</a>
+                    className="card-link">Discharge</a>
                 </h5>
+                {/* <h5>{this.petOwner(animal.id).join(" and ")}</h5> */}
               </div>
             </div>
           )
         }
       </section>
+        </React.Fragment>
     )
   }
 }
